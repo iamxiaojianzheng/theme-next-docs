@@ -209,6 +209,14 @@ firestore:
 <!-- tab Global Settings → -->
 Edit `busuanzi_count` option in {% label primary@NexT config file %}.
 When `enable: true`, global setting is enabled. If `total_visitors`, `total_views`, `post_views` are all `false`, Busuanzi only counts but never shows.
+If the default URL access fails, you can try to specify the configuration.
+```yml  NexT config file
+busuanzi_count:
+  enable: true
+  # Default url is https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  # Or try more better https://cn.vercount.one/js
+  custom_url: https://cn.vercount.one/js
+```
 <!-- endtab -->
 
 <!-- tab Site UV Settings → -->
